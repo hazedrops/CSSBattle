@@ -1,0 +1,50 @@
+<div class="container">
+  <div id="a" class="box"></div>
+  <div id="b" class="box"></div>
+  <div id="c" class="box"></div>
+  <div id="d" class="box"></div>
+</div>
+<style>
+  body {
+    background: #E3516E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    gap: 0;
+  }
+
+  .container>div {
+    width: 100px;
+    height: 100px;
+    background: #dd6b4d;
+  }
+
+  #a {
+    border-top-left-radius: 100%;
+    background: #51B5A9;
+  }
+
+  #b {
+    border-top-right-radius: 100%;
+    background: #FADE8B;
+  }
+
+  #c {
+    border-bottom-left-radius: 100%;
+    background: #F7F3D7;
+  }
+
+  #d {
+    border-bottom-right-radius: 100%;
+    background: transparent;
+  }
+</style>

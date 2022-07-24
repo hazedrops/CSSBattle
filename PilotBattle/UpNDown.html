@@ -1,0 +1,31 @@
+<div class="innerDiv" id="a"></div>
+<div class="innerDiv" id="b"></div>
+<div class="innerDiv" id="c"></div>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #62306D;
+    padding-top: 100px;
+  }
+
+  .innerDiv {
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+  }
+
+  #a,
+  #c {
+    border-bottom-left-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+  }
+
+  #b {
+    border-top-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+    transform: translateY(-100%)
+  }
+</style>
