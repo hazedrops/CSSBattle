@@ -1,0 +1,65 @@
+<div class="down first">
+  <div></div>
+</div>
+<div class="up"></div>
+<div class="down second">
+  <div></div>
+</div>
+
+<style>
+  body {
+    background: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    width: 60px;
+    height: 35px;
+    background: transparent;
+  }
+
+  .down {
+    border: 20px solid #D86F45;
+    border-top: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .first {
+    transform: translate(20%, 40%);
+  }
+
+  .second {
+    transform: translate(-20%, 40%);
+  }
+
+  .first:before,
+  .second:after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    background: #D86F45;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    top: -5px;
+  }
+
+  .first:before {
+    left: -20px;
+  }
+
+  .second:after {
+    left: 60px;
+  }
+
+  .up {
+    border: 20px solid #D86F45;
+    border-bottom: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: translateY(-40%);
+  }
+</style>
