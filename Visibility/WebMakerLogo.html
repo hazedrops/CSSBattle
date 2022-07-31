@@ -1,0 +1,52 @@
+<div class="light down"></div>
+<div class="dark down"></div>
+<div class="dark up"></div>
+<div class="light up most"></div>
+
+<style>
+  body {
+    background: #F2F2B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dark {
+    border-bottom: 130px solid #FD4602;
+    position: absolute;
+    left: 80px;
+    top: 85px;
+  }
+
+  .light {
+    border-bottom: 130px solid #FF6D00;
+    position: absolute;
+    left: 60px;
+    top: 85px;
+    z-index: 1;
+  }
+
+  .down {
+    transform: rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+
+  .up {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    position: absolute;
+    left: 170px;
+    top: 85px;
+  }
+
+  .most {
+    position: absolute;
+    left: 190px;
+    z-index: -1;
+  }
+</style>
