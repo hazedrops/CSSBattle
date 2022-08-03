@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="body">
+    <div class="a">
+      <div class="b">
+        <div class="c"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    background-color: #09042a;
+    width: 400px;
+    height: 300px;
+    position: relative;
+  }
+
+  .container * {
+    background: #09042a;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: 0;
+  }
+
+  .a {
+    background: #7b3f61;
+    left: 50%;
+    top: 50%;
+  }
+
+  .b {
+    background: #e78481;
+    left: 100px;
+    overflow: hidden;
+  }
+
+  .c {
+    left: -100px;
+  }
