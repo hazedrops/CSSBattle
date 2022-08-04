@@ -1,0 +1,48 @@
+<div class="outer">
+  <div class="inner">
+    <div class="thickBorder">
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #0B2429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer {
+    background: #998235;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #0B2429;
+  }
+
+  .thickBorder {
+    width: 140px;
+    height: 140px;
+    border: 45px solid #F3AC3C;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+</style>
