@@ -1,0 +1,66 @@
+<div>
+  <div class="twoCircle">
+    <div class="darkCircle left"></div>
+    <div class="middle"></div>
+    <div class="darkCircle right"></div>
+  </div>
+  <div class="pink up"></div>
+  <div class="pink down"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #09042A;
+  }
+
+  .twoCircle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .darkCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #09042A;
+    border: 10px solid #E78481;
+  }
+
+  .middle {
+    width: 60px;
+    height: 40px;
+    background: #E78481;
+  }
+
+  .left {
+    transform: translateX(10px)
+  }
+
+  .right {
+    transform: translateX(-10px)
+  }
+
+  .pink {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #F5BB9C;
+    border: 10px solid #09042A;
+    position: absolute;
+  }
+
+  .up {
+    top: 57px;
+    left: 160px;
+  }
+
+  .down {
+    bottom: 57px;
+    left: 160px;
+  }
+</style>
