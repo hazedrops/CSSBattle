@@ -1,0 +1,75 @@
+<div class="orangeDiv">
+  <div class="rightDia orange"></div>
+  <div class="leftDia orange"></div>
+</div>
+<div class="blueDiv">
+  <div class="rightDia blue"></div>
+  <div class="leftDia blue"></div>
+</div>
+
+<style>
+  body {
+    width: 100%;
+    background: #222;
+  }
+
+  .orangeDiv {
+    position: absolute;
+    top: 85px;
+    left: 136px;
+  }
+
+  .blueDiv {
+    position: absolute;
+    bottom: 125px;
+    left: 191px;
+  }
+
+  .rightDia {
+    width: 80px;
+    height: 32px;
+    transform: rotate(-45deg)
+  }
+
+  .leftDia {
+    width: 80px;
+    height: 32px;
+    transform: rotate(45deg)
+  }
+
+  .orange {
+    background: #F2994A;
+    position: absolute;
+  }
+
+  .rightDia.orange {
+    border-top-left-radius: 5px;
+    left: 2px;
+  }
+
+  .leftDia.orange {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    top: 50px;
+    left: -13.5px;
+  }
+
+  .blue {
+    background: #2D9CDB;
+    position: absolute;
+  }
+
+  .rightDia.blue {
+    border-bottom-right-radius: 10px;
+    width: 90px;
+    left: -12px;
+    top: 5px;
+  }
+
+  .leftDia.blue {
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 10px;
+    bottom: 10px;
+    left: 4px;
+  }
+</style>
