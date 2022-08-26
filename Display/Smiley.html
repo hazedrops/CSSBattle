@@ -1,0 +1,36 @@
+<div class="left"></div>
+<div class="right"></div>
+<div class="bottom"></div>
+
+<style>
+  body {
+    background: #6592CF;
+  }
+
+  div {
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    border: 20px solid #060F55;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: 0;
+    position: absolute;
+  }
+
+  div.left {
+    top: 40px;
+    left: 40px;
+  }
+
+  div.right {
+    top: 40px;
+    right: 40px;
+  }
+
+  div.bottom {
+    bottom: 40.5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg)
+  }
+</style>
