@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="greenCircle"></div>
+  <div class="yellowCup"></div>
+  <div class="greenCup"></div>
+  <div class="yellowCircle"></div>
+  <div class="yellowCup"></div>
+  <div class="greenCircle"></div>
+  <div class="yellowCircle"></div>
+  <div class="greenCup"></div>
+</div>
+
+<style>
+  body {
+    background: #1A4341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+  }
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .greenCircle {
+    background: #998235;
+  }
+
+  .yellowCup {
+    background: #F3AC3C;
+  }
+
+  .yellowCircle {
+    background: #F3AC3C;
+  }
+
+  .greenCup {
+    background: #998235;
+  }
+</style>
