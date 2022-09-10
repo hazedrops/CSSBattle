@@ -1,0 +1,33 @@
+<div class="circle">
+  <div class="rectangle"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #6592CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    background: #6592CF;
+    border: 50px solid #243D83;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .rectangle {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #243D83 50%, #6592CF 50%);
+    position: absolute;
+    top: -50px;
+    left: -50px;
+  }
+</style>
