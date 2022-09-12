@@ -1,0 +1,67 @@
+<div class="face">
+  <div class="hairL"></div>
+  <div class="hairR"></div>
+  <div class="eyeL"></div>
+  <div class="eyeR"></div>
+  <div class="mouth"></div>
+</div>
+<style>
+  body {
+    background: #293462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .face {
+    width: 200px;
+    height: 200px;
+    background: #FE5F55;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .face div {
+    position: absolute;
+    background: #FFF1C1;
+  }
+
+  div[class^='hair'] {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .hairR {
+    right: 0px;
+  }
+
+  div[class^='eye'] {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 50px;
+  }
+
+  .eyeL {
+    left: 20px;
+  }
+
+  .eyeR {
+    right: 20px;
+  }
+
+  .mouth {
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
