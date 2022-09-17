@@ -1,0 +1,50 @@
+<div class='green2'></div>
+<div class='yellow1'>
+  <div class='green1'></div>
+</div>
+<div class='yellow2'></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #1A4341;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  div[class$='2'] {
+    position: absolute;
+  }
+
+  .green1 {
+    width: 150px;
+    height: 150px;
+    border: 30px solid #998235;
+    border-top: none;
+    margin: 0 auto;
+  }
+
+  .green2 {
+    width: 270px;
+    height: 30px;
+    background: #998235;
+    bottom: 30px
+  }
+
+  .yellow1 {
+    width: 270px;
+    height: 210px;
+    border: 30px solid #F3AC3C;
+    border-top: none;
+  }
+
+  .yellow2 {
+    width: 30px;
+    height: 300px;
+    background: #F3AC3C;
+  }
+</style>
