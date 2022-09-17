@@ -1,0 +1,45 @@
+<div class="circle left"></div>
+<div class="middle"></div>
+<div class="circle right"></div>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #1A4341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .circle {
+    width: 302px;
+    height: 302px;
+    background: #1A4341;
+    border-radius: 200px;
+    z-index: 10;
+  }
+
+  .middle {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom, #F3AC3C, #F3AC3C 50%, #1A4341 50%, #1A4341);
+    background-size: 100% 40px;
+    bottom: 32px;
+  }
+
+  .left {
+    left: -160px;
+  }
+
+  .right {
+    right: -160px;
+  }
+</style>
