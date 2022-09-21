@@ -1,0 +1,53 @@
+<div class="triangle"></div>
+<div class="rectangle">
+  <div class="flat"></div>
+  <div class="thick"></div>
+</div>
+<style>
+  body {
+    background: #6592CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #243D83;
+  }
+
+  .rectangle {
+    width: 150px;
+    height: 100px;
+    background: #243D83;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+  }
+
+  .rectangle>div {
+    position: absolute;
+    background: #EEB850;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .flat {
+    width: 100px;
+    height: 10px;
+    border-radius: 50px;
+    top: -5%;
+  }
+
+  .thick {
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: 0;
+  }
+</style>
