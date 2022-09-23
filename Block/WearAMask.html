@@ -1,0 +1,77 @@
+<div class="cup">
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="circle"></div>
+</div>
+<div class="lHandle"></div>
+<div class="rHandle"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #293462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .cup {
+    width: 150px;
+    height: 100px;
+    background: #FFF1C1;
+    border: 1px solid pink;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+  }
+
+  div[class^="line"] {
+    width: 40px;
+    height: 9px;
+    border-radius: 50px;
+    left: 20px;
+  }
+
+  .line1 {
+    top: 20px;
+  }
+
+  .line2 {
+    top: 40px;
+  }
+
+  .circle {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  div[class$="Handle"] {
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    background: trandparent;
+    border: 10px solid #FFF1C1;
+    top: 92px;
+    border-radius: 50px;
+  }
+
+  .lHandle {
+    left: 57px;
+  }
+
+  .rHandle {
+    right: 57px;
+  }
+
+  .cup div {
+    background: #FE5F55;
+    position: absolute;
+    z-index: 10;
+  }
+</style>
