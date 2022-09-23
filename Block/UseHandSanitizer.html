@@ -1,0 +1,115 @@
+<div class="bottle">
+  <div class="yellowTop"></div>
+  <div class="greenTop"></div>
+  <div class="yellowBottom"></div>
+</div>
+<div class="cap"></div>
+<div class="pump1"></div>
+<div class="pump2"></div>
+<div class="pump3"></div>
+<div class="topDrop"></div>
+<div class="bottomDrop"></div>
+<style>
+  body {
+    background: #1A4341;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .bottle {
+    width: 100px;
+    height: 140px;
+    background: #998235;
+    border-radius: 20px;
+    bottom: 42px;
+    position: absolute;
+  }
+
+  .bottle div {
+    position: absolute;
+  }
+
+  .greenTop {
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: #998235;
+    top: 30px;
+    z-index: 10;
+  }
+
+  .yellowTop {
+    width: 100px;
+    height: 60px;
+    background: #F3AC3C;
+    border-radius: 20px;
+  }
+
+  .yellowBottom {
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: #F3AC3C;
+    bottom: 60px;
+    left: 50px;
+  }
+
+  .cap,
+  .pump1,
+  .pump2,
+  .pump3 {
+    background: #F3AC3C;
+    position: absolute;
+  }
+
+  .cap {
+    width: 50px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    top: 82px;
+  }
+
+  .pump1 {
+    width: 20px;
+    height: 21px;
+    top: 61px;
+  }
+
+  .pump2 {
+    width: 148px;
+    height: 20px;
+    top: 42px;
+    left: 142px;
+    border-radius: 20px
+  }
+
+  .pump3 {
+    width: 20px;
+    height: 40px;
+    top: 42px;
+    left: 272px;
+    border-radius: 20px;
+  }
+
+  div[class$="Drop"] {
+    width: 20px;
+    height: 20px;
+    background: #998235;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .topDrop {
+    top: 92px;
+    left: 272px;
+  }
+
+  .bottomDrop {
+    top: 122px;
+    left: 272px;
+  }
+</style>
