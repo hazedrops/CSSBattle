@@ -1,0 +1,72 @@
+<div class="finger1"></div>
+<div class="finger2"></div>
+<div class="finger3"></div>
+<div class="finger4"></div>
+<div class="finger5"></div>
+<div class="palm"></div>
+<div class="wrist""></div>
+<style>
+  body {
+  background: #F9E492;
+}
+  div {
+    background: #191919;
+    position: absolute;
+  }
+  div:nth-child(1), 
+  div:nth-child(2), 
+  div:nth-child(3), 
+  div:nth-child(4) {
+    border-radius: 20px;
+    width: 20px;    
+  }
+  .finger1, .finger3 {
+    height: 45px;
+    top: 88px;
+  }    
+  .finger1 {
+    left: 155px;
+  }
+  .finger2 {
+    height: 50px;
+    top: 78px;
+    left: 180px;
+  }
+  .finger3 {
+    left: 205px;
+  }
+  .finger4 {
+    height: 35px;
+    top: 98px;
+    left: 230px;
+  }
+  .finger5 {
+    border-radius: 20px;    
+    transform: rotate(60deg);
+    width: 20px;
+    height: 65px;
+    border: 5px solid #F9E492;    
+    position: absolute;    
+    top: 104px;
+    left: 153px;
+    z-index: 10;
+  }
+  .palm {
+    width: 100px;
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);    
+  }
+  .wrist {
+    width: 50px;
+    height: 62px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -30%);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+</style>
