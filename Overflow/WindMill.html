@@ -1,0 +1,48 @@
+<div class="yellowUp"></div>
+<div class="blueUp"></div>
+<div class="yellowDown"></div>
+<div class="blueDown"></div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  div[class^='yellow'] {
+    background: linear-gradient(to bottom, #F9E492 50%, transparent 50%);
+  }
+
+  div[class^='blue'] {
+    background: linear-gradient(to right, #4F77FF 50%, transparent 50%);
+  }
+
+  .yellowUp {
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+  }
+
+  .yellowDown {
+    top: 50px;
+    left: 200px;
+    transform: rotate(180deg) translateY(-50%);
+  }
+
+  .blueUp {
+    top: 50px;
+    right: 50%;
+    transform: rotate(-180deg) translateX(-50%);
+  }
+
+  .blueDown {
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
