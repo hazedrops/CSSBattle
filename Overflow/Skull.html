@@ -1,0 +1,95 @@
+<div class="skullTop">
+  <div class="lEye"></div>
+  <div class="rEye"></div>
+</div>
+<div class="skullBottom">
+  <div class="nose"></div>
+  <div class="tooth1"></div>
+  <div class="tooth2"></div>
+  <div class="tooth3"></div>
+</div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^='skull'] {
+    background: #4F77FF;
+  }
+
+  div[class$='Eye'],
+  div[class^='tooth'],
+  .nose {
+    background: #191919;
+  }
+
+  .skullTop {
+    width: 120px;
+    height: 100px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 11%;
+    border-bottom-right-radius: 11%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+
+  .skullBottom {
+    width: 80px;
+    height: 31px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    bottom: 28.5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  div[class$='Eye'] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 7px;
+  }
+
+  .lEye {
+    left: 15px;
+  }
+
+  .rEye {
+    right: 15px;
+  }
+
+  .nose {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 18.5px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  div[class^='tooth'] {
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    bottom: 0px;
+  }
+
+  .tooth1 {
+    left: 20px;
+  }
+
+  .tooth2 {
+    left: 35px;
+  }
+
+  .tooth3 {
+    right: 20px;
+  }
+</style>
