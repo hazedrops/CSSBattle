@@ -1,0 +1,99 @@
+<div class="square">
+  <div class="cornerLt">
+    <div class="yellow lt">
+      <div class="blue lt"></div>
+    </div>
+  </div>
+  <div class="cornerRt">
+    <div class="yellow rt">
+      <div class="blue rt"></div>
+    </div>
+  </div>
+  <div class="cornerLb">
+    <div class="yellow lb">
+      <div class="blue lb"></div>
+    </div>
+  </div>
+  <div class="cornerRb">
+    <div class="yellow rb">
+      <div class="blue rb"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .square {
+    background: #4F77FF;
+    width: 110px;
+    height: 110px;
+    display: relative;
+  }
+
+  .square div {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  div[class^='corner'] {
+    width: 60px;
+    height: 60px;
+    background: #191919;
+  }
+
+  .yellow {
+    width: 45px;
+    height: 45px;
+    background: #F9E492;
+  }
+
+  .blue {
+    width: 30px;
+    height: 30px;
+    background: #4F77FF;
+  }
+
+  .cornerLt {
+    top: 75px;
+    left: 125px;
+  }
+
+  /*   .yellowLt {
+    top: 0px;
+    left: 0px;
+  } */
+  .cornerRt {
+    top: 75px;
+    right: 125px;
+  }
+
+  .rt {
+    top: 0px;
+    right: 0px;
+  }
+
+  .cornerLb {
+    bottom: 75px;
+    left: 125px;
+  }
+
+  .lb {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .cornerRb {
+    bottom: 75px;
+    right: 125px;
+  }
+
+  .rb {
+    bottom: 0px;
+    right: 0px;
+  }
+</style>
