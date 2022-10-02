@@ -1,0 +1,78 @@
+<div class="blue1"></div>
+<div class="blue2"></div>
+<div class="blue3"></div>
+<div class="blue4"></div>
+<div class="yellow1"></div>
+<div class="yellow2"></div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^='blue'] {
+    background: #4F77FF;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div:nth-child(2),
+  div:nth-child(3) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: 10px solid #191919;
+  }
+
+  .blue1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 65px;
+  }
+
+  .blue2 {
+    width: 138px;
+    height: 30px;
+    top: 75px;
+  }
+
+  .blue3 {
+    width: 99px;
+    height: 30px;
+    top: 55px;
+  }
+
+  .blue4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 10px solid #191919;
+    top: 35px;
+  }
+
+  div[class^='yellow'] {
+    background: #F9E492;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .yellow1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 145px;
+  }
+
+  .yellow2 {
+    width: 20px;
+    height: 81px;
+    border-radius: 50px;
+    top: 58%;
+  }
+</style>
