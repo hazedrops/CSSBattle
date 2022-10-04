@@ -1,0 +1,27 @@
+<div class="first"></div>
+<div class="second"></div>
+<div class="third"></div>
+<div class="fourth"></div>
+<style>
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    width: 50px;
+    height: 150px;
+  }
+
+  .first,
+  .third {
+    background: linear-gradient(-135deg, #4F77FF 25%, #191919 25% 50%, #4F77FF 50% 75%, #191919 75%)
+  }
+
+  .second,
+  .fourth {
+    background: linear-gradient(135deg, #4F77FF 25%, #191919 25% 50%, #4F77FF 50% 75%, #191919 75%)
+  }
+</style>

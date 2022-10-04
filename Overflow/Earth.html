@@ -1,26 +1,22 @@
 <div class="globe"></div>
 <style>
   body {
-    background: #191919;
+    background: #191919;   
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
   }
-
   .globe {
     width: 150px;
     height: 150px;
     background: linear-gradient(#4F77FF 19.5%, #191919 19.5% 26.5%, #4F77FF 26.5% 46.5%, #191919 46.5% 53.5%, #4F77FF 53.5% 73.5%, #191919 73.5% 80.5%, #4F77FF 80.5%);
-    border-radius: 50%;
+    border-radius: 50%;    
   }
-
-  :before,
-  :after {
+  :before, :after {
     content: '';
     position: absolute;
     z-index: 1;
   }
-
   div:before {
     width: 210px;
     height: 210px;
@@ -32,7 +28,6 @@
     box-sizing: border-box;
     -webkit-box-reflect: left -90px;
   }
-
   div:after {
     background: #191919;
     width: 10px;
