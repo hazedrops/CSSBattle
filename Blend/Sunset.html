@@ -1,0 +1,58 @@
+<div class='outer'>
+  <div class='orange'></div>
+  <div class='yellow'></div>
+  <div class='brown'></div>
+</div>
+<style>
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer {
+    width: 151px;
+    height: 200px;
+    background: #F2AD43;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .outer div {
+    position: absolute;
+    border-radius: 50%;
+
+  }
+
+  .orange {
+    background: #E08027;
+    width: 200px;
+    height: 200px;
+    bottom: -50%;
+    left: -65%;
+    z-index: 2;
+  }
+
+  .brown {
+    background: #824B20;
+    width: 200px;
+    height: 200px;
+    bottom: -50%;
+    right: -66%;
+    z-index: 3;
+  }
+
+  .yellow {
+    background: #FFF58F;
+    width: 62px;
+    height: 62px;
+    top: 45%;
+    left: 30%;
+    z-index: 1;
+  }
+</style>
