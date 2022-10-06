@@ -1,0 +1,61 @@
+<div class="lt"></div>
+<div class="rt"></div>
+<div class="center"></div>
+<div class="lb"></div>
+<div class="rb"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+  }
+
+  div {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: 10px solid #5DBCF9;
+    position: absolute;
+    transform: translate(-50%, -50%)
+  }
+
+  .center {
+    top: 149px;
+    left: 201px;
+  }
+
+  div[class$='t'] {
+    top: 89px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  .lt {
+    left: 141px;
+    border-bottom-left-radius: 50%;
+  }
+
+  .rt {
+    right: 69px;
+    border-bottom-right-radius: 50%;
+  }
+
+  div[class$='b'] {
+    top: 209px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .lb {
+    left: 141px;
+    border-top-left-radius: 50%;
+
+  }
+
+  .rb {
+    right: 69px;
+    border-top-right-radius: 50%;
+  }
+</style>
