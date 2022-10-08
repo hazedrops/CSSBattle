@@ -1,0 +1,65 @@
+<div class="outer">
+  <div class="inner"></div>
+  <div class="mainArc"></div>
+  <div class="leftEdge"></div>
+  <div class="rightEdge"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer {
+    width: 160px;
+    height: 160px;
+    background: #824B20;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer div {
+    position: absolute;
+  }
+
+  .inner {
+    width: 100px;
+    height: 100px;
+    background: #E08027;
+    border-radius: 50%;
+  }
+
+  .mainArc {
+    width: 120px;
+    height: 60px;
+    border: 20px solid #FFF58F;
+    top: 50%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-color: transparent;
+  }
+
+  div[class$='Edge'] {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 9px);
+    background: #FFF58F;
+    border-radius: 50%;
+  }
+
+  .leftEdge {
+    left: 140px;
+  }
+
+  .rightEdge {
+    right: 140px;
+  }
+</style>
