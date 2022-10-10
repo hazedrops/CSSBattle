@@ -1,0 +1,97 @@
+<div class="main">
+  <div class="wing1"></div>
+  <div class="wing2"></div>
+  <div class="wing3"></div>
+  <div class="wing4"></div>
+  <div class="space"></div>
+  <div class="head"></div>
+  <div class="lEar"></div>
+  <div class="rEar"></div>
+</div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .main {
+    width: 250px;
+    height: 100px;
+    background: #F2AD43;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+  }
+
+  div[class^='wing']:nth-child(1),
+  div[class^='wing']:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    background: #191919;
+    border-radius: 50%;
+  }
+
+  .wing1 {
+    left: -50px;
+  }
+
+  .wing4 {
+    right: -50px;
+  }
+
+  div[class^='wing']:nth-child(2),
+  div[class^='wing']:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background: #191919;
+    border-radius: 50%;
+    top: 60px;
+  }
+
+  .wing2 {
+    left: -35px;
+  }
+
+  .wing3 {
+    right: -35px;
+  }
+
+  .space {
+    width: 80px;
+    height: 31px;
+    background: #191919;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .head {
+    width: 20px;
+    height: 20px;
+    background: #F2AD43;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+
+  div[class$='Ear'] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #F2AD43;
+    top: 5%;
+  }
+
+  .lEar {
+    left: 44%;
+  }
+
+  .rEar {
+    right: 44%;
+  }
+</style>
