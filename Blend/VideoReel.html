@@ -1,0 +1,66 @@
+<div class="container1">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="container2">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="container3">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="container4">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  div[class^='container'] {
+    position: absolute;
+  }
+
+  div[class^='container']>div {
+    width: 160px;
+    height: 150px;
+    background: #191919;
+    border-left: 10.5px solid #5DBCF9;
+    border-right: 10.5px solid #5DBCF9;
+    border-top: 20px solid #5DBCF9;
+    border-bottom: 20px solid #5DBCF9;
+  }
+
+  .container1 {
+    left: -45px;
+    top: -50px;
+  }
+
+  .container2 {
+    left: 45px;
+    top: -100px;
+  }
+
+  .container3 {
+    left: 195px;
+    top: -50px;
+  }
+
+  .container4 {
+    left: 345px;
+    top: -100px;
+  }
+</style>
