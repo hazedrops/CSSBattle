@@ -1,0 +1,82 @@
+<div class="leftOuter">
+  <div class="leftBlack">
+    <div class="leftHalf"></div>
+  </div>
+</div>
+<div class="rightOuter">
+  <div class="rightBlack">
+    <div class="rightHalf"></div>
+  </div>
+</div>
+<div class="nose"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class$='Outer'] {
+    background: #E08027;
+  }
+
+  .leftOuter {
+    width: 115px;
+    height: 115px;
+    left: 89px;
+    top: 76.5px;
+    border-radius: 0 50% 50% 50%;
+  }
+
+  .rightOuter {
+    width: 134px;
+    height: 134px;
+    right: 79px;
+    top: 67px;
+    border: 10.5px solid #191919;
+    border-radius: 50% 0 50% 50%;
+    z-index: 1;
+  }
+
+  div[class$='Black'] {
+    width: 90.5px;
+    height: 90.5px;
+    background: #191919;
+    border-radius: 50%;
+    top: 12px;
+  }
+
+  .leftBlack {
+    left: 12px;
+  }
+
+  .rightBlack {
+    right: 11px;
+  }
+
+  div[class$='Half'] {
+    width: 30px;
+    height: 15px;
+    background: #191919;
+    border: 10px solid #E08027;
+    border-bottom: none;
+    border-radius: 50px 50px 0 0;
+    left: 30px;
+    top: 37px;
+  }
+
+  .nose {
+    width: 53px;
+    height: 50px;
+    background: #E08027;
+    transform: rotate(45deg);
+    bottom: 89.5px;
+    left: 173px;
+  }
+</style>
