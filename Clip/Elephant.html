@@ -1,0 +1,104 @@
+<div class="lEar">
+  <div class="lEarInner"></div>
+</div>
+<div class="rEar">
+  <div class="rEarInner"></div>
+</div>
+<div class="face">
+  <div class="lEye"></div>
+  <div class="rEye"></div>
+</div>
+<div class="tusk"></div>
+<div class="nose"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #998235;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class*='Ear'] {
+    width: 80px;
+    height: 180px;
+    border-radius: 50%;
+  }
+
+  div[class$='Ear'] {
+    background: #1A4341;
+    top: 20%;
+    overflow: hidden;
+  }
+
+  div[class$='Inner'] {
+    background: #0B2429;
+  }
+
+  .lEar {
+    left: 50px;
+  }
+
+  .lEarInner {
+    left: 20%;
+  }
+
+  .rEar {
+    right: 50px;
+  }
+
+  .rEarInner {
+    right: 20%;
+  }
+
+  .face {
+    width: 180px;
+    height: 180px;
+    background: #1A4341;
+    border-radius: 50%;
+    top: 20%;
+    left: 110px;
+  }
+
+  div[class$='Eye'] {
+    width: 40px;
+    height: 20px;
+    background: #0B2429;
+    border: 10.5px solid #998235;
+    border-top: none;
+    border-radius: 0 0 50px 50px;
+    top: 50%;
+  }
+
+  .lEye {
+    left: 22%;
+  }
+
+  .rEye {
+    right: 22%;
+  }
+
+  .tusk {
+    width: 120px;
+    height: 60px;
+    background: transparent;
+    border: 20.5px solid #FFFFFF;
+    border-bottom: none;
+    border-radius: 60px 60px 0 0;
+    top: 190px;
+    left: 140px;
+  }
+
+  .nose {
+    width: 40px;
+    height: 120px;
+    background: #0B2429;
+    border-radius: 60px 60px 0 0;
+    bottom: 0;
+    left: 180px;
+  }
+</style>
