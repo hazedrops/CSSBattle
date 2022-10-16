@@ -1,0 +1,124 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="base"></div>
+<div class="face">
+  <div class="lEye"></div>
+  <div class="rEye"></div>
+</div>
+<style>
+  body {
+    background: #243D83
+  }
+
+  div {
+    background: #6592CF;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .base {
+    width: 100px;
+    height: 100px;
+    background: #6592CF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  div:nth-child(1) {
+    width: 61px;
+    height: 50px;
+    top: 65px;
+    left: 169px;
+    z-index: 2;
+  }
+
+  div:nth-child(2) {
+    width: 62px;
+    height: 60px;
+    bottom: 65px;
+    left: 169px;
+  }
+
+  div:nth-child(3),
+  div:nth-child(4) {
+    width: 55px;
+    height: 61px;
+    bottom: 119.5px;
+  }
+
+  div:nth-child(3) {
+    left: 115px;
+  }
+
+  div:nth-child(4) {
+    right: 115px;
+  }
+
+  div:nth-child(5),
+  div:nth-child(6) {
+    width: 50px;
+    height: 61px;
+    top: 80px;
+    z-index: 2;
+  }
+
+  div:nth-child(5) {
+    transform: rotate(45deg);
+    left: 135px;
+  }
+
+  div:nth-child(6) {
+    transform: rotate(-45deg);
+    right: 135px;
+  }
+
+  div:nth-child(7),
+  div:nth-child(8) {
+    width: 50px;
+    height: 61px;
+    bottom: 80px;
+  }
+
+  div:nth-child(7) {
+    transform: rotate(-45deg);
+    left: 135px;
+  }
+
+  div:nth-child(8) {
+    transform: rotate(45deg);
+    right: 135px;
+  }
+
+  .face {
+    width: 60px;
+    height: 78px;
+    background: #243D83;
+    border-radius: 50px;
+    left: 170px;
+    top: 97px;
+    z-index: 1;
+  }
+
+  div[class$='Eye'] {
+    width: 10px;
+    height: 10px;
+    background: #6592CF;
+    top: 33px;
+  }
+
+  .face .lEye {
+    left: 15px;
+  }
+
+  .face .rEye {
+    left: 35px;
+  }
+</style>
