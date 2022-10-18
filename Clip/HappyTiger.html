@@ -1,0 +1,113 @@
+<div class="lEar"></div>
+<div class="rEar"></div>
+<div class="face">
+  <div class="mark"></div>
+  <div class="lEye"></div>
+  <div class="rEye"></div>
+  <div class="mouth">
+    <div class="center"></div>
+    <div class="lWhisker"></div>
+    <div class="rWhisker"></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #F3AC3C;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .face {
+    width: 150px;
+    height: 150px;
+    background: #998235;
+    border-radius: 50% 50% 60px 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  div[class$='Ear'] {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1A4341;
+    border: 10.5px solid #998235;
+    top: 65px;
+  }
+
+  .lEar {
+    left: 115px;
+  }
+
+  .rEar {
+    right: 115px;
+  }
+
+  .mark {
+    width: 31px;
+    height: 31px;
+    transform: rotate(45deg);
+    background: #1A4341;
+    top: -12px;
+    left: 60px;
+  }
+
+  div[class$='Eye'] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1A4341;
+    top: 40%;
+  }
+
+  .lEye {
+    left: 25px;
+  }
+
+  .rEye {
+    right: 25px;
+  }
+
+  .mouth {
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 18px 18px 46px 46px;
+    bottom: 15px;
+    left: 25px;
+  }
+
+  div[class$='Whisker'] {
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+    border: 10.5px solid #1A4341;
+    border-radius: 0 0 50px 50px;
+    border-top: none;
+    top: 10px;
+  }
+
+  .lWhisker {
+    left: 15px;
+  }
+
+  .rWhisker {
+    right: 15px;
+  }
+
+  .center {
+    width: 10px;
+    height: 20px;
+    background: #1A4341;
+    top: -10px;
+    left: 45px;
+  }
+</style>
