@@ -1,0 +1,171 @@
+<div class="upOuterCurve1">
+  <div class="upInnerCurve1"></div>
+</div>
+<div class="upOuterCurve2">
+  <div class="upInnerCurve2"></div>
+</div>
+<div class="downOuterCurve1">
+  <div class="downInnerCurve1"></div>
+</div>
+<div class="downOuterCurve2">
+  <div class="downInnerCurve2"></div>
+</div>
+<div class="patch">
+  <div class="toRightOuter">
+    <div class="toRightInner"></div>
+  </div>
+  <div class="head">
+    <div class="eyes"></div>
+    <div class="eyes"></div>
+  </div>
+</div>
+<div class="toLeftOuter">
+  <div class="toLeftInner"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^='up'] {
+    background: #191919;
+    border-radius: 50px;
+    border: 5px solid #E08027;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+  }
+
+  div[class^='upOuter'] {
+    width: 70px;
+    height: 90px;
+    top: 40px;
+  }
+
+  .upOuterCurve1 {
+    left: 15px;
+  }
+
+  .upOuterCurve2 {
+    left: 115px;
+  }
+
+  div[class^='upInner'] {
+    width: 40px;
+    height: 75px;
+    top: 48px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  div[class^='down'] {
+    background: #191919;
+    border-radius: 50px;
+    border: 5px solid #E08027;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+  }
+
+  div[class^='downOuter'] {
+    width: 70px;
+    height: 160px;
+    bottom: 40px;
+  }
+
+  .downOuterCurve1 {
+    left: 65px;
+  }
+
+  .downOuterCurve2 {
+    left: 165px;
+  }
+
+  div[class^='downInner'] {
+    width: 38.6px;
+    height: 165px;
+    top: 62px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .patch {
+    width: 150px;
+    height: 100px;
+    background: #191919;
+    top: 25%;
+    right: 50px;
+  }
+
+  div[class^="toRight"] {
+    border-radius: 40px 0 0 0;
+    border: 5px solid #E08027;
+    border-bottom: none;
+    border-right: none;
+    bottom: 0px;
+  }
+
+  .toRightOuter {
+    width: 55px;
+    height: 35px;
+    left: 14.5px;
+  }
+
+  .toRightinner {
+    width: 38px;
+    height: 20px;
+    left: 11px;
+  }
+
+  .head {
+    width: 50px;
+    height: 30px;
+    background: #E08027;
+    border-radius: 30px 50px 50px 30px;
+    right: 35px;
+    bottom: 10px;
+  }
+
+  .eyes {
+    width: 10px;
+    height: 10px;
+    background: #191919;
+    border-radius: 50%;
+    right: 10px;
+  }
+
+  .eyes:nth-child(1) {
+    top: 2px;
+  }
+
+  .eyes:nth-child(2) {
+    top: 18px;
+  }
+
+  div[class^="toLeft"] {
+    height: 35px;
+    border-radius: 0 0 40px 0;
+    border: 5px solid #E08027;
+    border-top: none;
+    border-left: none;
+    left: 0px;
+  }
+
+  .toLeftOuter {
+    width: 35px;
+    top: 125px;
+  }
+
+  .toLeftInner {
+    width: 20px;
+    top: -15px;
+  }
+</style>
