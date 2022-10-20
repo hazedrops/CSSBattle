@@ -1,0 +1,90 @@
+<div class="ears"></div>
+<div class="ears"></div>
+<div class="upper">
+  <div class="eyes"></div>
+  <div class="eyes"></div>
+</div>
+<div class="lower">
+  <div class="nose"></div>
+  <div class="nose"></div>
+</div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .upper {
+    width: 130px;
+    height: 100px;
+    background: #FE5F55;
+    border-radius: 60px 60px 0 0;
+    top: 75px;
+    left: 135px;
+  }
+
+  .eyes {
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    border-radius: 50%;
+    top: 50px;
+  }
+
+  .eyes:nth-child(1) {
+    left: 25px;
+  }
+
+  .eyes:nth-child(2) {
+    left: 95px;
+  }
+
+  .lower {
+    width: 150px;
+    height: 100px;
+    background: #A64942;
+    border-radius: 56px 56px 48px 48px;
+    bottom: 55px;
+    left: 125px;
+  }
+
+  .nose {
+    width: 20px;
+    height: 30px;
+    background: #000000;
+    border-radius: 50%;
+    top: 20px;
+  }
+
+  .nose:nth-child(1) {
+    transform: rotate(45deg);
+    left: 25px;
+  }
+
+  .nose:nth-child(2) {
+    transform: rotate(-45deg);
+    left: 105px;
+  }
+
+  .ears {
+    width: 10px;
+    height: 20px;
+    background: #000000;
+    border: 5px solid #FE5F55;
+    border-radius: 50%;
+    top: 70px;
+  }
+
+  .ears:nth-child(1) {
+    transform: rotate(-45deg);
+    left: 149.5px;
+  }
+
+  .ears:nth-child(2) {
+    transform: rotate(45deg);
+    left: 230.5px;
+  }
+</style>
