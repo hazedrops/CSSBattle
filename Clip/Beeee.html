@@ -1,0 +1,54 @@
+<div class="body">
+  <div class="dot"></div>
+</div>
+<div class="wings1"></div>
+<div class="wings2"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #998235;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .body {
+    width: 150px;
+    height: 75px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #191919 25px, #EFF33C 25px 35px, #191919 35px 60px, #EFF33C 60px 70px, #191919 70px 95px, #EFF33C 95px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #191919;
+    right: 20px;
+    top: 20px;
+  }
+
+  div[class^='wings'] {
+    width: 75px;
+    height: 75px;
+    background: #FFFFFF;
+    top: 75px;
+  }
+
+  .wings1 {
+    border-radius: 50% 50% 0 50%;
+    left: 125px;
+  }
+
+  .wings2 {
+    border-radius: 50% 50% 50% 0;
+    right: 125px;
+  }
+</style>
