@@ -1,0 +1,75 @@
+<div class="firstStems"></div>
+<div class="secondStem"></div>
+<div class="thirdStem"></div>
+<div class="heads1"></div>
+<div class="heads2"></div>
+<div class="heads3"></div>
+<div class="heads4"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class*='Stem'] {
+    height: 100px;
+    top: 90px;
+    border-bottom: none;
+  }
+
+  .firstStems {
+    width: 80px;
+    background: transparent;
+    border: 10.5px solid #FE5F55;
+    left: 95px;
+    border-bottom: none;
+  }
+
+  .secondStem {
+    width: 40px;
+    background: transparent;
+    border: 10px solid #A64942;
+    left: 235px;
+    border-right: none;
+  }
+
+  .thirdStem {
+    width: 40px;
+    background: linear-gradient(to bottom, transparent 10px, #FE5F55 10px 20px, transparent 20px);
+    border: 11px solid #FE5F55;
+    left: 305px;
+    border-right: none;
+  }
+
+  div[class^='heads'] {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FE5F55;
+    top: 170px;
+  }
+
+  .heads1 {
+    left: 55px;
+  }
+
+  .heads2 {
+    left: 125px;
+  }
+
+  .heads3 {
+    left: 195px;
+    background: #A64942 !important;
+  }
+
+  .heads4 {
+    left: 265px;
+  }
+</style>
