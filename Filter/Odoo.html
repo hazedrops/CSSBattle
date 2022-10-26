@@ -1,0 +1,56 @@
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<div class="circle4"></div>
+<div class="stem"></div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^='circle'] {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 122px;
+    background: transparent;
+  }
+
+  div[class^='circle']:not(.circle1) {
+    border: 20.5px solid #8F8F8F;
+  }
+
+  .circle1 {
+    left: 38px;
+    border: 20.5px solid #714B67;
+  }
+
+  .circle2 {
+    left: 119px;
+  }
+
+  .circle3 {
+    left: 201px;
+  }
+
+  .circle4 {
+    left: 283px;
+  }
+
+  .stem {
+    width: 20px;
+    height: 56px;
+    background: #8F8F8F;
+    border-radius: 50px 50px 0 0;
+    top: 102px;
+    left: 179px;
+  }
+</style>
