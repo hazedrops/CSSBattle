@@ -1,0 +1,55 @@
+<div class="lOval"></div>
+<div class="rOval"></div>
+<div class="diamond">
+  <div class="circle"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #243D83;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class$='Oval'] {
+    width: 100px;
+    height: 220px;
+    background: #6592CF;
+    border-radius: 50px;
+  }
+
+  .lOval {
+    top: 40px;
+    left: 150px;
+    transform: rotate(-45deg);
+  }
+
+  .rOval {
+    bottom: 40px;
+    left: 150px;
+    transform: rotate(45deg);
+  }
+
+  .diamond {
+    width: 120px;
+    height: 120px;
+    background: #243D83;
+    left: 140px;
+    top: 90px;
+    transform: rotate(45deg);
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    background: #EEB850;
+    border-radius: 50%;
+    top: 30px;
+    left: 30px;
+  }
+</style>
