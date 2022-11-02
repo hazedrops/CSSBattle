@@ -1,0 +1,82 @@
+<div class="green1"></div>
+<div class="green2"></div>
+<div class="green3"></div>
+<div class="green4"></div>
+<div class="yellow"></div>
+<div class="green5"></div>
+<div class="green6"></div>
+<style>
+  body {
+    background: #F3AC3C;
+  }
+
+  div {
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  div[class^='green'] {
+    height: 50px;
+    background: #1A4341;
+  }
+
+  div[class^='green']:nth-child(odd) {
+    width: 150px;
+  }
+
+  div[class^='green']:nth-child(even) {
+    width: 100px;
+  }
+
+  .green1 {
+    left: 65px;
+    top: 65px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .green2 {
+    left: 65px;
+    top: 115px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .green3 {
+    right: 65px;
+    bottom: 65px;
+    border-top-right-radius: 0px;
+  }
+
+  .green4 {
+    right: 65px;
+    bottom: 115px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .yellow {
+    width: 70px;
+    height: 70px;
+    background: #F3AC3C;
+    left: 165px;
+    top: 115px;
+    z-index: 2;
+  }
+
+  .green5,
+  .green6 {
+    width: 20px !important;
+    height: 20px !important;
+    z-index: 1;
+  }
+
+  .green5 {
+    left: 160px;
+    top: 110px;
+  }
+
+  .green6 {
+    right: 160px;
+    bottom: 110px;
+  }
+</style>
