@@ -1,0 +1,61 @@
+<div class="base"></div>
+<div class="lPink"></div>
+<div class="rPink"></div>
+<div class="lVanilla"></div>
+<div class="rVanilla"></div>
+<style>
+  body {
+    background: #F7F3DA;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .base {
+    width: 40px;
+    height: 40px;
+    background: #D25B70;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  div[class$='Pink'] {
+    width: 200px;
+    height: 40px;
+    background: #D25B70;
+  }
+
+  .lPink {
+    top: 110px;
+    left: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .rPink {
+    top: 150px;
+    right: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  div[class$='Vanilla'] {
+    width: 200px;
+    height: 40px;
+    background: #F7F3DA;
+    z-index: 1;
+  }
+
+  .lVanilla {
+    top: 150px;
+    left: 0;
+    border-top-right-radius: 20px;
+  }
+
+  .rVanilla {
+    top: 110px;
+    right: 0;
+    border-bottom-left-radius: 20px;
+  }
+</style>
