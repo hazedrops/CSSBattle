@@ -1,0 +1,40 @@
+<div class="circle"></div>
+<div class="pi"></div>
+<div class="triangle"></div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    background: #F9E492;
+    border-radius: 50%;
+    top: 50px;
+    left: 100px;
+  }
+
+  .pi {
+    width: 91px;
+    height: 91px;
+    background: #191919;
+    border-bottom-right-radius: 100%;
+    top: 178px;
+    left: 155px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .triangle {
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 140px solid #4F77FF;
+    bottom: 0;
+    left: 60px;
+  }
+</style>
