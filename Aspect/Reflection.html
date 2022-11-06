@@ -1,0 +1,30 @@
+<div class="background"></div>
+<div class="yellow1"></div>
+<div class="yellow2"></div>
+<style>
+  body {
+    background: linear-gradient(#D25B70 50%, #6CB3A9 50%)
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^='yellow'] {
+    width: 200px;
+    height: 100px;
+    left: 100px;
+  }
+
+  .yellow1 {
+    background: #F6DF96;
+    border-radius: 100px 100px 0 0;
+    top: 50px;
+  }
+
+  .yellow2 {
+    background: linear-gradient(#6CB3A9 15px, #F6DF96 15px 25px, #6CB3A9 25px 40px, #F6DF96 40px 50px, #6CB3A9 50px 65px, #F6DF96 65px 75px, #6CB3A9 75px 90px, #F6DF96 90px);
+    border-radius: 0 0 100px 100px;
+    bottom: 50px;
+  }
+</style>
