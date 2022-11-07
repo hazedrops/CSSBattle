@@ -1,0 +1,80 @@
+<div class="big1"></div>
+<div class="big2"></div>
+<div class="big3"></div>
+<div class="base1"></div>
+<div class="base2"></div>
+<div class="small1"></div>
+<div class="small2"></div>
+<div class="small3"></div>
+<div class="small4"></div>
+<style>
+  body {
+    background: #6592CF
+  }
+
+  div {
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  div[class^="big"] {
+    width: 200px;
+    height: 200px;
+    background: #243D83;
+    top: 50px;
+  }
+
+  .big1 {
+    left: -126px;
+  }
+
+  .big2 {
+    left: 100px;
+  }
+
+  .big3 {
+    right: -126px;
+  }
+
+  div[class^="base"] {
+    width: 35px;
+    height: 35px;
+    background: #243D83;
+    border-radius: 0%;
+    top: 131px;
+  }
+
+  .base1 {
+    left: 68px;
+  }
+
+  .base2 {
+    left: 297px;
+  }
+
+  div[class^="small"] {
+    width: 30px;
+    height: 30px;
+    background: #6592CF;
+  }
+
+  .small1 {
+    top: 110px;
+    left: 72px;
+  }
+
+  .small2 {
+    top: 160px;
+    left: 72px;
+  }
+
+  .small3 {
+    top: 110px;
+    right: 72px;
+  }
+
+  .small4 {
+    top: 160px;
+    right: 72px;
+  }
+</style>
