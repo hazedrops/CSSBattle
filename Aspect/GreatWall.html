@@ -1,0 +1,98 @@
+<div class="circle">
+  <div class="smallCircle"></div>
+  <div class="lLine1"></div>
+  <div class="lLine2"></div>
+  <div class="lLine3"></div>
+  <div class="sLine1"></div>
+  <div class="sLine2"></div>
+  <div class="sLine3"></div>
+  <div class="rLine1"></div>
+  <div class="rLine2"></div>
+  <div class="rLine3"></div>
+</div>
+<style>
+  body {
+    background: #4F77FF;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #191919;
+    top: 50px;
+    left: 100px;
+    overflow: hidden;
+  }
+
+  .smallCircle {
+    width: 40px;
+    height: 40px;
+    background: #F9E492;
+    border-radius: 50%;
+    left: 40px;
+    top: 40px;
+  }
+
+  div[class*='Line'] {
+    background: #F9E492;
+    height: 16px;
+  }
+
+  div[class^='lLine'] {
+    width: 100px;
+  }
+
+  .lLine1 {
+    top: 122px;
+  }
+
+  .lLine2 {
+    top: 148px;
+  }
+
+  .lLine3 {
+    top: 174px;
+  }
+
+  div[class^='sLine'] {
+    width: 22px;
+    height: 18px;
+    left: 98.5px;
+    background: #D6B73F;
+    transform: skew(-30deg, -15deg) rotate(60deg);
+  }
+
+  .sLine1 {
+    top: 115px;
+  }
+
+  .sLine2 {
+    top: 141px;
+  }
+
+  .sLine3 {
+    top: 167px;
+  }
+
+  div[class^='rLine'] {
+    width: 100px;
+    left: 120px;
+  }
+
+  .rLine1 {
+    top: 109px;
+  }
+
+  .rLine2 {
+    top: 135px;
+  }
+
+  .rLine3 {
+    top: 161px;
+  }
+</style>
