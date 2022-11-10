@@ -1,0 +1,35 @@
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<style>
+  body {
+    background: #6CB3A9;
+  }
+
+  div[class^='circle'] {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .circle1 {
+    width: 180px;
+    height: 180px;
+    background: #781728;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #D25B70 45%, transparent 45% 55%, #FFFFFF 55%)
+  }
+
+  .circle3 {
+    width: 50px;
+    height: 50px;
+    background: #F6DF96;
+    border: 10px solid #781728;
+  }
+</style>
