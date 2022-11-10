@@ -1,0 +1,64 @@
+<div class="circle">
+  <div class="half1">
+    <div class="inner1"></div>
+    <div class="inner2"></div>
+  </div>
+  <div class="half2">
+    <div class="inner1"></div>
+    <div class="inner2"></div>
+  </div>
+</div>
+<style>
+  body {
+    background: #243D83;
+  }
+
+  div {
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    background: #6592CF;
+    top: 50px;
+    left: 100px;
+  }
+
+  .circle div {
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    border: 20px solid #243D83;
+  }
+
+  div[class^='half'] {
+    left: 15px;
+    overflow: hidden;
+  }
+
+  .half1 {
+    top: -60px;
+  }
+
+  .half2 {
+    bottom: -60px;
+  }
+
+  .half1 div[class^='inner'] {
+    top: 55px;
+  }
+
+  div[class^='inner1'] {
+    left: -95px;
+  }
+
+  div[class^='inner2'] {
+    right: -95px;
+  }
+
+  .half2 div[class^='inner'] {
+    bottom: 55px;
+  }
+</style>
