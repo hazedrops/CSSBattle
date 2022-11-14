@@ -1,0 +1,57 @@
+<div class="tie1"></div>
+<div class="tie2"></div>
+<div class="base">
+  <div class="line1"></div>
+  <div class="line2"></div>
+</div>
+<style>
+  body {
+    background: #AC474B;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class^="tie"] {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 10px solid #FFFFFF;
+    top: 50px;
+  }
+
+  .tie1 {
+    border-radius: 50% 50% 0 50%;
+    left: 165px;
+  }
+
+  .tie2 {
+    border-radius: 50% 50% 50% 0;
+    left: 195px;
+  }
+
+  .base {
+    width: 140px;
+    height: 140px;
+    background: #FFFFFF;
+    top: 110px;
+    left: 130px;
+  }
+
+  div[class^='line'] {
+    background: #AC474B;
+  }
+
+  .line1 {
+    width: 20px;
+    height: 140px;
+    left: 60px;
+  }
+
+  .line2 {
+    width: 140px;
+    height: 20px;
+    top: 60px;
+  }
+</style>
