@@ -1,0 +1,91 @@
+<div class="base">
+  <div class="inner">
+    <div class="center">
+      <div class="tBlade1"></div>
+      <div class="tBlade2"></div>
+    </div>
+    <div class="mBlade1"></div>
+    <div class="bBlade1"></div>
+    <div class="mBlade2"></div>
+    <div class="bBlade2"></div>
+  </div>
+</div>
+<div class="lEdge"></div>
+<div class="rEdge"></div>
+<style>
+  body {
+    background: #14313E;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .base {
+    width: 274px;
+    height: 150px;
+    background: #FFDF00;
+    border-radius: 20px;
+    top: 75px;
+    left: 63px;
+  }
+
+  .inner {
+    width: 224px;
+    height: 100px;
+    background: #14313E;
+    border-radius: 10px;
+    top: 25px;
+    left: 25px;
+  }
+
+  .center {
+    width: 146px;
+    height: 240px;
+    border: 25px solid #14313E;
+    background: #14313E;
+    border-top: none;
+    border-bottom: none;
+    top: -29px;
+    left: 14px;
+    overflow-x: hidden;
+  }
+
+  div[class$='Edge'] {
+    width: 20px;
+    height: 40px;
+    background: #FFDF00;
+    border-radius: 5px;
+    top: 130px;
+  }
+
+  .lEdge {
+    left: 53px;
+  }
+
+  .rEdge {
+    right: 53px;
+  }
+
+  div[class^='tBlade'] {
+    width: 30px;
+    height: 165px;
+    background: #FFDF00;
+  }
+
+  .tBlade1 {
+    transform: rotate(-45deg);
+    left: 33px;
+    top: -27px;
+    border-left: 8px solid #14313E;
+    border-right: 8px solid #14313E;
+    z-index: 2;
+  }
+
+  .tBlade2 {
+    transform: rotate(45deg);
+    left: 80px;
+    top: -31px;
+    z-index: 1;
+  }
+</style>
