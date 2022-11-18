@@ -1,0 +1,84 @@
+<div class="mHair"></div>
+<div class="lHair"></div>
+<div class="rHair"></div>
+<div class="lsHair"></div>
+<div class="rsHair"></div>
+<div class="face">
+  <div class="mouth"></div>
+</div>
+<style>
+  body {
+    background: #161616;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  div[class$="Hair"]:not(.mHair) {
+    width: 60px;
+    height: 30px;
+    border-radius: 50% / 0 0 100% 100%;
+    background: #EBAE11;
+  }
+
+  .mHair {
+    width: 60px;
+    height: 60px;
+    border-radius: 0 100%;
+    background: #EBAE11;
+    transform: rotate(45deg);
+    top: 97px;
+    left: 170px;
+  }
+
+  .lHair,
+  .rHair {
+    top: 135px;
+  }
+
+  .lHair {
+    transform: rotate(60deg);
+    left: 142px;
+  }
+
+  .rHair {
+    transform: rotate(-60deg);
+    right: 142px;
+  }
+
+  .lsHair,
+  .rsHair {
+    top: 160px;
+    z-index: -1;
+  }
+
+  .lsHair {
+    transform: rotate(15deg);
+    left: 137px;
+  }
+
+  .rsHair {
+    transform: rotate(-15deg);
+    right: 137px;
+  }
+
+  .face {
+    width: 80px;
+    height: 73px;
+    border-radius: 0 0 50px 50px;
+    background: linear-gradient(to right, #FFFFFF 50%, #FFDEB9 50%);
+    top: 143px;
+    left: 160px;
+    z-index: -1;
+  }
+
+  .mouth {
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 50px 50px;
+    background: #161616;
+    bottom: 10px;
+    left: 30px;
+  }
+</style>
