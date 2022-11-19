@@ -1,0 +1,97 @@
+<div class="main">
+  <div class="inner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+    <div class="dot4"></div>
+    <div class="dot5"></div>
+    <div class="dot6"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+  </div>
+</div>
+<style>
+  body {
+    background: #000000;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .main {
+    width: 240px;
+    height: 120px;
+    background: #37385A;
+    border-radius: 20px;
+    top: 90px;
+    left: 80px;
+  }
+
+  .inner {
+    width: 200px;
+    height: 80px;
+    background: linear-gradient(-75deg, #9897AE 82px, #C0C3DB 82px 132px, #9897AE 132px);
+    border-radius: 10px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .inner div {
+    background: #000000;
+  }
+
+  div[class^='dot'] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  div[class^='dot']:nth-of-type(odd) {
+    left: 15px;
+  }
+
+  div[class^='dot']:nth-of-type(even) {
+    right: 15px;
+  }
+
+  .dot1,
+  .dot2 {
+    top: 15px;
+  }
+
+  .dot3,
+  .dot4 {
+    top: 35px;
+  }
+
+  .dot5,
+  .dot6 {
+    top: 55px;
+  }
+
+  div[class^='line'] {
+    top: 15px;
+    width: 10px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .line1 {
+    left: 65px;
+  }
+
+  .line2 {
+    left: 85px;
+  }
+
+  .line3 {
+    left: 105px;
+  }
+
+  .line4 {
+    left: 125px;
+  }
+</style>
