@@ -1,0 +1,98 @@
+<div class="triangle"></div>
+<div class="lEye">
+  <div class="lInner1">
+    <div class="lInner2">
+      <div class="lInner3"></div>
+    </div>
+  </div>
+</div>
+<div class="rEye">
+  <div class="rInner1">
+    <div class="rInner2">
+      <div class="rInner3"></div>
+    </div>
+  </div>
+</div>
+<style>
+  body {
+    background: #BAC7CE;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 108px;
+    border-left: 92px solid transparent;
+    border-right: 92px solid transparent;
+    border-top: 92px solid #475862;
+  }
+
+  div[class$='Eye'] {
+    width: 120px;
+    height: 120px;
+    background: #000000;
+    top: 130px;
+  }
+
+  .lEye {
+    left: 30px;
+    border-radius: 0 60px 0 60px;
+    transform: rotate(-15deg);
+  }
+
+  .rEye {
+    right: 30.5px;
+    border-radius: 60px 0 60px 0;
+    transform: rotate(15deg);
+  }
+
+  div[class$='Eye'] div {
+    border-radius: 50%;
+  }
+
+  div[class$='Inner1'] {
+    width: 100px;
+    height: 100px;
+    background: #5A6042;
+    top: 10px;
+    left: 10px;
+    overflow: hidden;
+  }
+
+  div[class$='Inner2'] {
+    width: 100px;
+    height: 100px;
+    background: #868A64;
+  }
+
+  .lInner2 {
+    top: 14px;
+    right: 4px;
+  }
+
+  .rInner2 {
+    top: 14px;
+    left: 4px;
+  }
+
+  div[class$='Inner3'] {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(#4E2B24, #4E2B24 15px, #000000 15px, #000000);
+  }
+
+  .lInner3 {
+    top: 16px;
+    left: 34px;
+  }
+
+  .rInner3 {
+    top: 16px;
+    right: 34px;
+  }
+</style>
