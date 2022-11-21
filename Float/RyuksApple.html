@@ -1,0 +1,57 @@
+<div class="lApple">
+  <div class="bite1"></div>
+  <div class="bite2"></div>
+</div>
+<div class="rApple"></div>
+<div class="stem"></div>
+<style>
+  body {
+    background: #000000;
+  }
+
+  div {
+    position: absolute;
+    background: #D4392D;
+  }
+
+  div[class$='Apple'] {
+    top: 90px;
+    width: 98px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .lApple {
+    left: 122px;
+    transform: rotate(-26deg);
+  }
+
+  .rApple {
+    right: 120px;
+    transform: rotate(26deg);
+  }
+
+  .stem {
+    width: 10px;
+    height: 40px;
+    top: 70px;
+    left: 195px;
+  }
+
+  div[class^='bite'] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000000;
+  }
+
+  .bite1 {
+    left: -5px;
+    top: -5px;
+  }
+
+  .bite2 {
+    left: -23px;
+    bottom: 39px;
+  }
+</style>
