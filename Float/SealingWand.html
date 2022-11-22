@@ -1,0 +1,79 @@
+<div class="center"></div>
+<div class="wBrow1"></div>
+<div class="wBrow2"></div>
+<div class="wBrow3"></div>
+<div class="beak"></div>
+<div class="stick"></div>
+<div class="neck"></div>
+<style>
+  body {
+    background: #161616;
+  }
+
+  div {
+    position: absolute;
+  }
+
+  .center {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(#161616 10px, #A22015 10px 15px, #FFFFFF 15px 25px, #A22015 25px 30px);
+    top: 120px;
+    left: 170px;
+  }
+
+  div[class^='wBrow'] {
+    background: #FFFFFF;
+    border-radius: 0 0 0 30px;
+    height: 12px;
+    z-index: 1;
+  }
+
+  .wBrow1 {
+    width: 55px;
+    top: 132px;
+    left: 130px;
+  }
+
+  .wBrow2 {
+    width: 40px;
+    top: 144px;
+    left: 145px;
+  }
+
+  .wBrow3 {
+    width: 25px;
+    top: 156px;
+    left: 160px;
+  }
+
+  .beak {
+    width: 70px;
+    height: 40px;
+    background: #E96A23;
+    border-radius: 0 40px 5px 0;
+    top: 129px;
+    left: 210px;
+    z-index: -1;
+  }
+
+  .neck {
+    width: 30px;
+    height: 30px;
+    background: #A22015;
+    border-radius: 0 0 10px 10px;
+    top: 173px;
+    left: 185px;
+    z-index: -1;
+  }
+
+  .stick {
+    width: 20px;
+    height: 100px;
+    bottom: 0;
+    left: 190px;
+    background: #E96A23;
+    z-index: -1;
+  }
+</style>
