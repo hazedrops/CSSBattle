@@ -1,0 +1,58 @@
+<div class="outer1">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<div class="outer2">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<div class="outer3">
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<div class="outer4">
+  <div class="circle"></div>
+</div>
+<style>
+  body {
+    background: #191919;
+  }
+
+  div[class^='outer'] {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .outer1 {
+    top: 20px;
+    width: 220px;
+  }
+
+  .outer2 {
+    top: 80px;
+    width: 160px;
+  }
+
+  .outer3 {
+    top: 140px;
+    width: 100px;
+  }
+
+  .outer4 {
+    top: 200px;
+    width: 400px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F6E59C;
+  }
+</style>
